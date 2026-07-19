@@ -1,7 +1,18 @@
 # J. McCarthy Books — jmccarthybooks.com
-# Everything here is public. Nothing to hide.
+#
+# ============================================================
+# STAGING MODE — currently blocking all crawlers.
+#
+# TO GO LIVE on the real domain, delete the two "Disallow" lines
+# below and uncomment the "Allow: /" line. Also remove the
+# STAGING-NOINDEX meta tags from the HTML pages (grep for
+# STAGING-NOINDEX to find all of them).
+# ============================================================
 
 User-agent: *
-Allow: /
+Disallow: /
+
+# Uncomment the line below when going live, and delete the Disallow above.
+# Allow: /
 
 Sitemap: https://jmccarthybooks.com/sitemap.xml

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+
+  "//": [
+    "Vercel deployment config. This is the file that matters on Vercel —",
+    "_redirects (Netlify), netlify.toml and .htaccess (Apache) are inert here",
+    "and are kept only in case the site moves hosts later.",
+    "",
+    "cleanUrls   : serves /falcon for falcon.html, and redirects",
+    "              /falcon.html -> /falcon so there is one canonical URL.",
+    "trailingSlash: false, to match the canonical tags in the HTML.",
+    "404          : Vercel serves the root 404.html automatically with a",
+    "               real 404 status, which is what the copy brief requires."
+  ],
+
+  "cleanUrls": true,
+  "trailingSlash": false,
+
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    },
+    {
+      "//": "Fingerprint-free static assets — cache hard, but let HTML revalidate.",
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800, must-revalidate" }
+      ]
+    }
+  ]
+}
