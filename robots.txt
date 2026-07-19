@@ -15,4 +15,4 @@ Disallow: /
 # Uncomment the line below when going live, and delete the Disallow above.
 # Allow: /
 
-Sitemap: https://jmccarthybooks.com/sitemap.xml
+Sitemap: https://www.jmccarthybooks.com/sitemap.xml
