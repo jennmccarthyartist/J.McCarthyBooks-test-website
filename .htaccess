@@ -1,0 +1,17 @@
+# Apache config for jmccarthybooks.com.
+# Only ONE of _redirects / netlify.toml / .htaccess will apply,
+# depending on where this site is deployed. This file is for Apache
+# hosts (cPanel, shared hosting, DreamHost, and similar).
+
+# Unknown URLs get the real 404 page with a real 404 status.
+# Do NOT replace this with a redirect to the home page — a redirect
+# tells search engines the broken URL is valid, and they will index it.
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Pretty URLs — internal rewrites, so /falcon stays in the address bar.
+  RewriteRule ^falcon/?$    /falcon.html    [L]
+  RewriteRule ^the-file/?$  /the-file.html  [L]
+</IfModule>

@@ -1,0 +1,16 @@
+# Netlify config. Duplicates the pretty-URL rules in _redirects so the
+# site behaves the same whichever file Netlify reads first (_redirects wins).
+# Netlify serves /404.html automatically with a true 404 status.
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/falcon"
+  to = "/falcon.html"
+  status = 200
+
+[[redirects]]
+  from = "/the-file"
+  to = "/the-file.html"
+  status = 200

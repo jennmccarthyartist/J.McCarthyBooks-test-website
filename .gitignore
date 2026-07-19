@@ -1,0 +1,48 @@
+# ============================================================
+# What NOT to publish
+# ------------------------------------------------------------
+# This repository IS the public website — everything committed
+# here gets served at a guessable URL. Anything listed below
+# stays on your machine and never reaches the web.
+#
+# These files still exist in your local site/assets/ folder.
+# If you ever link one from a page, REMOVE ITS LINE HERE FIRST,
+# or the page will ship with a broken image/download.
+# ============================================================
+
+# --- Unannounced subscriber surprise -------------------------
+# The build spec is explicit that the Binder wallpapers must not
+# be listed, mentioned, teased or linked anywhere. Publishing
+# them would make them findable by URL and spoil the reveal.
+assets/Binder/
+
+# --- Large unreferenced files --------------------------------
+# The media kit page offers press assets "by email on request",
+# so this 29 MB PDF is not linked from anywhere on the site.
+assets/downloads/media-kit.pdf
+assets/downloads/book-club-one-sheet.pdf
+
+# --- Superseded source art -----------------------------------
+# The lead-magnet covers are served as optimised .webp versions
+# (assets/doc-*.webp); these are the original PNGs.
+assets/lead magnet images/
+
+# Rejected / replaced artwork, kept locally for reference only.
+assets/illustrative NACT.jpg
+assets/emblem-moon-1024.png
+assets/cat-book.png
+assets/logo-black.png
+assets/jmccarthy-logo.svg
+
+# --- OS / editor cruft ---------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# --- Never commit ---------------------------------------------
+node_modules/
+.env
+.env.*

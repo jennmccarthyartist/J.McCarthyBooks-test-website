@@ -1,0 +1,7 @@
+# J. McCarthy Books — jmccarthybooks.com
+# Everything here is public. Nothing to hide.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jmccarthybooks.com/sitemap.xml

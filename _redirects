@@ -1,0 +1,12 @@
+# Netlify redirects/rewrites. Ignored by every other host.
+# Only ONE of _redirects / netlify.toml / .htaccess will apply,
+# depending on where this site is deployed.
+
+# Pretty URLs — rewrite (200), not redirect, so the short URL stays
+# in the address bar. Useful on print, podcasts, and business cards.
+/falcon      /falcon.html      200
+/the-file    /the-file.html    200
+
+# Not-found handling. 404 is the status, not a redirect: unknown URLs
+# must NOT be sent to the home page, or search engines will index them.
+/*           /404.html         404

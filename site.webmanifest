@@ -1,0 +1,14 @@
+{
+  "name": "J. McCarthy Books",
+  "short_name": "J. McCarthy",
+  "description": "Literary museum mysteries — the Keiko Ito Mystery Series.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#141210",
+  "icons": [
+    { "src": "assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/favicon-180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
