@@ -196,7 +196,34 @@ and it flows through automatically.
 
 ---
 
-## Hosting: pick one config file
+## Deployment (Vercel)
+
+The site deploys from this repo to Vercel. It is plain static HTML —
+**no build command, no output directory, no framework preset.**
+
+`vercel.json` is the only config that takes effect on Vercel:
+
+| Setting | Why |
+|---|---|
+| `cleanUrls: true` | Serves `/falcon` for `falcon.html`, and redirects `/falcon.html` → `/falcon` so each page has one canonical URL. |
+| `trailingSlash: false` | Matches the `<link rel="canonical">` tags in the HTML. |
+| `headers` | `nosniff`, `Referrer-Policy`, `X-Frame-Options`, plus a 7-day cache on `/assets/*`. |
+
+Vercel serves the root `404.html` with a real 404 status automatically —
+no config needed, and that is what the copy brief requires.
+
+**`vercel.json` must stay strictly schema-valid.** Vercel sets
+`additionalProperties: false`, so any key it doesn't recognise — including
+a `"//"` pseudo-comment — makes the whole deployment fail validation
+before it starts. JSON has no comment syntax; document changes here
+instead. To check a change before pushing:
+
+```
+curl -s https://openapi.vercel.sh/vercel.json -o vschema.json
+python -c "import json;from jsonschema import Draft7Validator as V;c=json.load(open('vercel.json'));c.pop('\$schema',None);print(list(V(json.load(open('vschema.json'))).iter_errors(c)) or 'valid')"
+```
+
+## Other hosts: pick one config file
 
 Three are included; only the one matching your host applies.
 
