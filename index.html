@@ -44,7 +44,7 @@
         "@id": "https://www.jmccarthybooks.com/#person",
         "name": "J. McCarthy",
         "jobTitle": "Author",
-        "url": "https://www.jmccarthybooks.com/about.html",
+        "url": "https://www.jmccarthybooks.com/about",
         "description": "Author of The Joseon Retrospective and the Keiko Ito Mystery Series. A former acquisitions editor and high school teacher with a B.A. in Art and Graphic Design, based in San Diego, California.",
         "homeLocation": { "@type": "Place", "name": "San Diego, California" },
         "alumniOf": { "@type": "CollegeOrUniversity", "name": "Point Loma Nazarene University" },
@@ -64,24 +64,24 @@
       },
       {
         "@type": "BookSeries",
-        "@id": "https://www.jmccarthybooks.com/series.html#series",
+        "@id": "https://www.jmccarthybooks.com/series#series",
         "name": "Keiko Ito Mystery Series",
         "author": { "@id": "https://www.jmccarthybooks.com/#person" },
-        "url": "https://www.jmccarthybooks.com/series.html",
+        "url": "https://www.jmccarthybooks.com/series",
         "numberOfItems": 5,
         "description": "Literary mysteries set at the National Art Center Tokyo, in which Senior Registrar Keiko Ito solves cases through documentary evidence — condition reports, badge logs, and archives."
       },
       {
         "@type": "Book",
-        "@id": "https://www.jmccarthybooks.com/the-joseon-retrospective.html#book",
+        "@id": "https://www.jmccarthybooks.com/the-joseon-retrospective#book",
         "name": "The Joseon Retrospective",
         "alternateName": "The Joseon Retrospective: A Tokyo Art Museum Mystery",
         "author": { "@id": "https://www.jmccarthybooks.com/#person" },
         "inLanguage": "en",
-        "isPartOf": { "@id": "https://www.jmccarthybooks.com/series.html#series" },
+        "isPartOf": { "@id": "https://www.jmccarthybooks.com/series#series" },
         "position": 1,
         "genre": ["Mystery", "Literary fiction"],
-        "url": "https://www.jmccarthybooks.com/the-joseon-retrospective.html",
+        "url": "https://www.jmccarthybooks.com/the-joseon-retrospective",
         "datePublished": "2026-10",
         "image": "https://www.jmccarthybooks.com/assets/joseon-retrospective-cover.jpg",
         "abstract": "The Joseon Retrospective (Keiko Ito Mystery Series, Book One) is a literary mystery set at the National Art Center Tokyo (NACT), one of Japan's largest exhibition venues and a major national art institution that holds no permanent collection. Senior Registrar Keiko Ito — nineteen years a registrar, eleven of them at NACT — investigates the murder of Korean provenance researcher Dr. Yun Se-bin, whose body is discovered in a basement service corridor during preparations for a Joseon dynasty ceramics retrospective. The novel's mechanism of detection is entirely documentary: Keiko cross-references building management system badge logs, inspection schedules, and 1938 colonial-era acquisition records to identify the killer. Themes include Korean–Japanese colonial history, art restitution, institutional trust, and the ethics of the archive. The mystery is solved by a condition report, not a confession. Approximately 53,000 words. The series continues in Book Two.",
@@ -115,7 +115,7 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="index.html" aria-label="J. McCarthy Books — home">
+      <a class="brand" href="/" aria-label="J. McCarthy Books — home">
         <img src="assets/logo-mark-dark.png" alt="" width="38" height="32">
         <span class="brand__name">J. McCarthy Books</span>
       </a>
@@ -123,13 +123,13 @@
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <nav class="nav" id="primary-nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="series.html">The Series</a>
-        <a href="the-file.html">The File</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="book-clubs.html">Book Clubs</a>
-        <a class="nav__cta" href="the-file.html">Open the File</a>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/series">The Series</a>
+        <a href="/the-file">The File</a>
+        <a href="/about">About</a>
+        <a href="/faq">FAQ</a>
+        <a href="/book-clubs">Book Clubs</a>
+        <a class="nav__cta" href="/the-file">Open the File</a>
       </nav>
     </div>
   </header>
@@ -192,8 +192,8 @@
               <span class="tag tag--outline">Dark academia</span>
             </div>
             <div class="btn-row">
-              <a class="btn btn--primary" href="the-joseon-retrospective.html">Read the full description</a>
-              <a class="btn btn--ghost" href="the-file.html">Open the file</a>
+              <a class="btn btn--primary" href="/the-joseon-retrospective">Read the full description</a>
+              <a class="btn btn--ghost" href="/the-file">Open the file</a>
             </div>
           </div>
         </div>
@@ -238,7 +238,7 @@
             <p class="lede" style="color:#d8d2c6;">A condition report, a catalog entry, a 1938 letter, and a floor plan &mdash; drawn from the world of the novel and prepared as facsimiles for readers. Join the newsletter and the file is yours, free.</p>
             <p style="color:var(--muted-light);font-size:15px;">The file is still growing &mdash; each entry worth opening.</p>
             <div class="btn-row mt-2">
-              <a class="btn btn--primary btn--lg" href="the-file.html">Open the file</a>
+              <a class="btn btn--primary btn--lg" href="/the-file">Open the file</a>
             </div>
           </div>
           <aside class="dossier-card" aria-label="What is in the file">
@@ -261,7 +261,7 @@
             <h2>Five cases. One registrar.</h2>
             <p class="lede">The Keiko Ito Mysteries follow a museum professional through the cases her paperwork will not let her ignore. <em>The Joseon Retrospective</em> opens the series in October 2026; <em>The Unsigned Falcon</em> follows in Spring 2027.</p>
             <p class="muted">Each novel tells a complete case. Starting at the beginning is best &mdash; but no book will strand you.</p>
-            <a class="arrow-link mt-2" href="series.html">See the reading order
+            <a class="arrow-link mt-2" href="/series">See the reading order
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 7h15M11 2l5 5-5 5"/></svg>
             </a>
           </div>
@@ -281,7 +281,7 @@
           <p class="lede" style="margin:0 auto;">Twelve spoiler-free discussion questions, a provenance timeline, a glossary, and a note from the author &mdash; free to print and circulate.</p>
         </div>
         <div class="center reveal">
-          <a class="btn btn--primary btn--lg" href="book-clubs.html">For book clubs &amp; libraries</a>
+          <a class="btn btn--primary btn--lg" href="/book-clubs">For book clubs &amp; libraries</a>
         </div>
       </div>
     </section>
@@ -309,33 +309,33 @@
         <div class="footer-col">
           <h4>Read</h4>
           <ul>
-            <li><a href="the-joseon-retrospective.html">The Joseon Retrospective</a></li>
-            <li><a href="falcon.html">The Unsigned Falcon</a></li>
-            <li><a href="series.html">The Series</a></li>
-            <li><a href="the-file.html">The File</a></li>
+            <li><a href="/the-joseon-retrospective">The Joseon Retrospective</a></li>
+            <li><a href="/falcon">The Unsigned Falcon</a></li>
+            <li><a href="/series">The Series</a></li>
+            <li><a href="/the-file">The File</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>More</h4>
           <ul>
-            <li><a href="about.html">About J. McCarthy</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="book-clubs.html">For Book Clubs</a></li>
-            <li><a href="media-kit.html">Media Kit</a></li>
-            <li><a href="contact.html">Contact &amp; Press</a></li>
+            <li><a href="/about">About J. McCarthy</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/book-clubs">For Book Clubs</a></li>
+            <li><a href="/media-kit">Media Kit</a></li>
+            <li><a href="/contact">Contact &amp; Press</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>The File</h4>
           <p style="font-size:14px;color:var(--muted-light);margin:0 0 14px;">Four free documents from the world of the novel.</p>
-          <a class="btn btn--secondary" href="the-file.html">Open the file</a>
+          <a class="btn btn--secondary" href="/the-file">Open the file</a>
         </div>
       </div>
       <div class="footer-bottom">
         <div>&copy; <span id="year">2026</span> J. McCarthy &middot; The Keiko Ito Mystery Series</div>
         <div>
-          <a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
-          <a href="contact.html">Contact</a>
+          <a href="/privacy">Privacy</a> &nbsp;&middot;&nbsp;
+          <a href="/contact">Contact</a>
         </div>
       </div>
     </div>
