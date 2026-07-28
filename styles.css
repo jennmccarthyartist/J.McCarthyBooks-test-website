@@ -126,8 +126,11 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 /* ---------- Header / Nav ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 40;
+  /* NOTE: do NOT add backdrop-filter/filter/transform here. Any of them
+     makes this header the containing block for the fixed mobile nav panel
+     below, which collapses the panel to header height and lets the menu
+     links overlap the page. The 0.97 background is opaque enough already. */
   background: rgba(20, 18, 16, 0.97);
-  backdrop-filter: saturate(120%) blur(6px);
   border-bottom: 1px solid var(--line-dark);
 }
 .site-header__inner {
@@ -170,6 +173,8 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
   .nav-toggle { display: inline-flex; }
   .nav {
     position: fixed; inset: 0 0 0 auto; width: min(320px, 82vw);
+    height: 100vh; height: 100dvh; /* full-height panel, robust on mobile */
+    overflow-y: auto;
     flex-direction: column; align-items: flex-start; gap: 4px;
     background: var(--ink); border-left: 1px solid var(--line-dark);
     padding: 88px 32px 32px;
