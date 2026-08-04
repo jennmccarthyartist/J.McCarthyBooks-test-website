@@ -125,6 +125,34 @@
   });
 
   /* ============================================================
+     /advance-copies — request links (§5)
+     Each [data-arc="key"] link uses its real URL from cfg.arc when
+     set (opening in a new tab); while empty it keeps its no-JS-safe
+     fallback href (/the-file) and swaps to the text in
+     data-arc-fallback. The BookSirens card is revealed only when a
+     URL exists.
+     ============================================================ */
+  var arc = cfg.arc || {};
+  function gateArc(key, url) {
+    document.querySelectorAll('[data-arc="' + key + '"]').forEach(function (a) {
+      if (url) {
+        a.href = url;
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener');
+      } else {
+        var fb = a.getAttribute('data-arc-fallback');
+        if (fb) { a.textContent = fb; }
+      }
+    });
+  }
+  gateArc('booksprout', arc.booksproutUrl || '');
+  gateArc('form', arc.requestFormUrl || '');
+  gateArc('booksirens', arc.bookSirensUrl || '');
+  document.querySelectorAll('[data-arc-card="booksirens"]').forEach(function (el) {
+    el.hidden = !(arc.bookSirensUrl);
+  });
+
+  /* ============================================================
      /falcon — converts to a preorder redirect when one exists
      ============================================================ */
   var falconUrl = (cfg.falcon || {}).preorderUrl;

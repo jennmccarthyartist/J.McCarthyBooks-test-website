@@ -357,6 +357,48 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .trade-note p { font-size: 15px; color: var(--muted); margin: 0; }
 
 /* ============================================================
+   ADVANCE COPIES page (§5)
+   ============================================================ */
+.ac-header {
+  display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 40px; align-items: start;
+}
+@media (max-width: 860px) { .ac-header { grid-template-columns: 1fr; gap: 28px; } }
+.ac-header h1 { font-size: clamp(30px, 4vw, 46px); margin: 12px 0 20px; }
+.ac-lede { font-size: 18px; color: var(--ink-2); max-width: 54ch; margin: 0 0 16px; }
+.ac-sub { font-size: 16px; color: var(--muted); max-width: 54ch; margin: 0; }
+
+/* "At a glance" card */
+.glance-card {
+  background: #FAF8F4; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 24px;
+}
+.glance-row { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.glance-row:first-child { padding-top: 0; }
+.glance-row:last-child { padding-bottom: 0; border-bottom: 0; }
+.glance-row dt {
+  font-family: var(--font-display); font-weight: 600; font-size: 13px;
+  color: var(--ink); margin: 0 0 3px;
+}
+.glance-row dd { font-size: 14px; color: var(--muted); margin: 0; }
+
+/* Numbered request cards reuse .card-grid / .card / .card__num.
+   Add the bottom link. */
+.card__link {
+  display: inline-block; margin-top: 14px;
+  font-family: var(--font-display); font-weight: 600; font-size: 14px;
+  color: var(--cinnabar); text-decoration: underline; text-underline-offset: 3px;
+}
+.card__link:hover { color: var(--cinnabar-soft); }
+.card .card__link { margin-top: auto; }
+.card--stack { display: flex; flex-direction: column; }
+
+/* Two closing columns */
+.ac-two { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 56px); }
+@media (max-width: 860px) { .ac-two { grid-template-columns: 1fr; } }
+.ac-two h2 { font-size: 18px; font-weight: 600; margin: 0 0 12px; }
+.ac-two p { color: var(--muted); font-size: 15.5px; }
+
+/* ============================================================
    PULL-QUOTES / PRAISE
    ============================================================ */
 .praise-grid {
