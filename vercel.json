@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/falcon", "destination": "/the-unsigned-falcon", "permanent": true }
+    { "source": "/falcon", "destination": "/the-unsigned-falcon", "statusCode": 301 }
   ],
   "headers": [
     {
