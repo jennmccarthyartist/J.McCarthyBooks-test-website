@@ -98,6 +98,33 @@
   });
 
   /* ============================================================
+     BOOK PAGE — ebook preorder button (Books2Read universal link)
+     Two states, driven by cfg.joseon.books2readUrl:
+       set   → "Preorder the ebook · $4.99" → the link
+       empty → "Tell me the moment preorders open" → newsletter
+     Also reveals the "Read the opening pages" button only once the
+     /excerpt page exists (cfg.joseon.excerptLive).
+     ============================================================ */
+  var b2r = (cfg.joseon && cfg.joseon.books2readUrl) || '';
+  document.querySelectorAll('[data-preorder-ebook]').forEach(function (a) {
+    if (b2r) {
+      a.href = b2r;
+      a.textContent = 'Preorder the ebook · $4.99';
+      a.setAttribute('rel', 'noopener');
+      a.setAttribute('target', '_blank');
+    } else {
+      a.href = '/the-file';
+      a.textContent = 'Tell me the moment preorders open';
+      a.removeAttribute('target');
+    }
+  });
+  var excerptLive = !!(cfg.joseon && cfg.joseon.excerptLive);
+  document.querySelectorAll('[data-when="excerpt"]').forEach(function (el) {
+    el.hidden = !excerptLive;
+    if (excerptLive) { el.setAttribute('href', '/excerpt'); }
+  });
+
+  /* ============================================================
      /falcon — converts to a preorder redirect when one exists
      ============================================================ */
   var falconUrl = (cfg.falcon || {}).preorderUrl;

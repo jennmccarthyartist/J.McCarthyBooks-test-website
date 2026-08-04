@@ -66,7 +66,7 @@
         "position": 1,
         "genre": ["Mystery", "Literary fiction"],
         "url": "https://www.jmccarthybooks.com/the-joseon-retrospective",
-        "datePublished": "2026-10",
+        "datePublished": "2026-10-20",
         "image": "https://www.jmccarthybooks.com/assets/joseon-retrospective-cover.jpg",
         "abstract": "The Joseon Retrospective (Keiko Ito Mystery Series, Book One) is a literary mystery set at the National Art Center Tokyo (NACT), one of Japan's largest exhibition venues and a major national art institution that holds no permanent collection. Senior Registrar Keiko Ito — nineteen years a registrar, eleven of them at NACT — investigates the murder of Korean provenance researcher Dr. Yun Se-bin, whose body is discovered in a basement service corridor during preparations for a Joseon dynasty ceramics retrospective. The novel's mechanism of detection is entirely documentary: Keiko cross-references building management system badge logs, inspection schedules, and 1938 colonial-era acquisition records to identify the killer. Themes include Korean–Japanese colonial history, art restitution, institutional trust, and the ethics of the archive. The mystery is solved by a condition report, not a confession. Approximately 53,000 words. The series continues in Book Two.",
         "workExample": [
@@ -137,7 +137,7 @@
                  alt="Cover of The Joseon Retrospective by J. McCarthy — a registrar in white gloves examining a pale celadon moon jar in a Tokyo museum gallery.">
           </div>
           <div>
-            <span class="eyebrow eyebrow--light">October 2026</span>
+            <span class="eyebrow eyebrow--light">20 October 2026</span>
             <h1>The Joseon Retrospective</h1>
             <p class="lede">A Tokyo Art Museum Mystery &middot; A Keiko Ito Mystery, Book One</p>
             <div class="tag-row mt-2">
@@ -161,7 +161,7 @@
 
         <div class="answer-block">
           <p class="answer-label">What is this book?</p>
-          <p><em>The Joseon Retrospective</em> is a literary mystery set at the National Art Center Tokyo, in which Senior Registrar Keiko Ito investigates the murder of a Korean provenance researcher and solves it entirely through documentary evidence &mdash; badge logs, inspection schedules, and 1938 colonial-era acquisition records. It is Book One of the Keiko Ito Mystery Series, publishing October 2026.</p>
+          <p><em>The Joseon Retrospective</em> is a literary mystery set at the National Art Center Tokyo, in which Senior Registrar Keiko Ito investigates the murder of a Korean provenance researcher and solves it entirely through documentary evidence &mdash; badge logs, inspection schedules, and 1938 colonial-era acquisition records. It is Book One of the Keiko Ito Mystery Series, publishing Tuesday, 20 October 2026.</p>
         </div>
 
         <h2>About the book</h2>
@@ -203,26 +203,45 @@
     <!-- ===== BUY ===== -->
     <section class="section--warm" id="buy">
       <div class="wrap wrap--narrow">
-        <span class="eyebrow">Formats</span>
-        <h2>Where to find it</h2>
+        <p class="buy-eyebrow">Formats &amp; editions</p>
+        <h2>Preorder the ebook. Print arrives 20 October.</h2>
+        <p class="buy-intro"><em>The Joseon Retrospective</em> publishes on Tuesday, 20 October 2026. The ebook can be preordered now from every major store through one link. Paperback and hardcover go on sale on publication day.</p>
 
-        <ul class="formats mb-2">
-          <li><strong>Paperback</strong> &middot; $15.99</li>
-          <li><strong>Hardcover</strong> &middot; $27.99</li>
-          <li><strong>Ebook</strong> &middot; $4.99</li>
-        </ul>
-
-        <div class="retailers" data-retailers></div>
-
-        <div class="mt-3" data-when="links">
-          <p class="muted">Available from the retailers above. Trade orders through Ingram (iPage) and Baker &amp; Taylor.</p>
+        <div class="format-cards">
+          <div class="format-card">
+            <p class="format-card__name">Paperback</p>
+            <p class="format-card__price">$15.99</p>
+            <p class="format-card__isbn">ISBN 979-8-9964711-0-2</p>
+          </div>
+          <div class="format-card">
+            <p class="format-card__name">Hardcover</p>
+            <p class="format-card__price">$27.99</p>
+            <p class="format-card__isbn">ISBN 979-8-9964711-1-9</p>
+          </div>
+          <div class="format-card">
+            <p class="format-card__name">Ebook</p>
+            <p class="format-card__price">$4.99</p>
+            <p class="format-card__isbn">ISBN 979-8-9964711-2-6 &middot; EPUB</p>
+          </div>
         </div>
 
-        <div class="mt-3" data-when="no-links">
-          <p>Links go live as each retailer opens for preorder. Join the file and I&rsquo;ll tell you the moment they do.</p>
-          <div class="btn-row mt-2">
-            <a class="btn btn--primary" href="/the-file">Open the file</a>
-          </div>
+        <div class="btn-row">
+          <!-- Two-state, driven by cfg.joseon.books2readUrl in retailers.js.
+               Default: "Tell me the moment preorders open" → /the-file.
+               With a link: "Preorder the ebook · $4.99" → Books2Read. -->
+          <a class="btn btn--primary btn--lg" data-preorder-ebook href="/the-file">Tell me the moment preorders open</a>
+          <!-- Hidden until the /excerpt page ships (§4); flip cfg.joseon.excerptLive.
+               href stays "#" until then so the live HTML holds no dead /excerpt link. -->
+          <a class="btn btn--ghost btn--lg" data-when="excerpt" href="#" hidden>Read the opening pages</a>
+        </div>
+
+        <p class="buy-microcopy">
+          <span>Kindle, Kobo, Apple Books, Barnes &amp; Noble &mdash; one link, your usual store.</span>
+          <span>Print editions on sale 20 October; they can&rsquo;t be preordered.</span>
+        </p>
+
+        <div class="trade-note">
+          <p>Library ebook editions through OverDrive/Libby and Hoopla from publication.</p>
         </div>
       </div>
     </section>
@@ -235,7 +254,7 @@
           <caption>Book facts</caption>
           <tbody>
             <tr><th scope="row">Series</th><td>The Keiko Ito Mysteries, Book One of five</td></tr>
-            <tr><th scope="row">Publication</th><td>October 2026</td></tr>
+            <tr><th scope="row">Publication</th><td>20 October 2026</td></tr>
             <tr><th scope="row">Publisher</th><td>J. McCarthy Books (independently published)</td></tr>
             <tr><th scope="row">Paperback</th><td>$15.99 &middot; ISBN 979-8-9964711-0-2</td></tr>
             <tr><th scope="row">Hardcover</th><td>$27.99 &middot; ISBN 979-8-9964711-1-9</td></tr>

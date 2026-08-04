@@ -20,11 +20,22 @@
 
 window.SITE_CONFIG = {
 
-  /* ---- Book 1: The Joseon Retrospective (October 2026) ---- */
+  /* ---- Book 1: The Joseon Retrospective (Tuesday, 20 October 2026) ---- */
   joseon: {
     /* Set to true once ANY link below is live and the book is
        orderable. Controls whether CTAs read "Preorder" or "Buy". */
     onSale: false,
+
+    /* THE EBOOK PREORDER LINK (Books2Read universal link).
+       Paste it here and the book page's primary button flips from
+       "Tell me the moment preorders open" (→ newsletter) to
+       "Preorder the ebook · $4.99" (→ this URL). One-line change. */
+    books2readUrl: "",
+
+    /* Flip to true when the /excerpt page ships (§4). Until then the
+       "Read the opening pages" button stays hidden so the live site
+       never links to a page that doesn't exist. */
+    excerptLive: false,
 
     retailers: [
       { name: "Amazon",        url: "" },  // via KDP
