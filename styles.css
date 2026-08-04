@@ -152,7 +152,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 }
 .nav { display: flex; align-items: center; gap: clamp(14px, 2vw, 30px); }
 .nav a {
-  font-family: var(--font-display); font-size: 12px;
+  font-family: var(--font-display); font-weight: 600; font-size: 11px;
   letter-spacing: 0.16em; text-transform: uppercase;
   color: #c9c3b8; text-decoration: none; transition: color 0.18s;
   padding: 6px 0;
