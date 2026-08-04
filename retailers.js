@@ -35,7 +35,7 @@ window.SITE_CONFIG = {
     /* Flip to true when the /excerpt page ships (§4). Until then the
        "Read the opening pages" button stays hidden so the live site
        never links to a page that doesn't exist. */
-    excerptLive: false,
+    excerptLive: true,
 
     retailers: [
       { name: "Amazon",        url: "" },  // via KDP
