@@ -631,14 +631,20 @@ section.page-hero { padding-top: 0; padding-bottom: 0; }
    ABOUT
    ============================================================ */
 .about-split { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(36px, 6vw, 64px); align-items: start; }
-/* Brand celadon panel behind the black imprint mark. Ink on celadon is
-   an approved pairing in the Brand Guidelines (5.4:1, AA). */
-.about-portrait {
-  border: 1px solid var(--jade-deep); border-radius: var(--radius-lg); overflow: hidden;
-  background: var(--jade); padding: 26px;
-  display: flex; align-items: center; justify-content: center;
+/* Author portrait, framed as a record card (§6). The surrounding card is
+   what makes the portrait read as belonging to the novel's world. */
+.portrait-frame { background: #FAF8F4; padding: 28px; border-radius: var(--radius); }
+.portrait-frame__plate { background: #FFFFFF; border: 1px solid var(--line); padding: 14px 14px 0; }
+.portrait-frame__plate img { display: block; width: 100%; height: auto; }
+.portrait-frame__rule { height: 1px; background: var(--line); border: 0; margin: 14px 0 0; }
+.portrait-record {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+  font-size: 11px; line-height: 1.9; color: var(--muted);
+  margin: 0; padding: 12px 0 14px;
+  display: grid; grid-template-columns: 66px 1fr; row-gap: 0;
 }
-.about-portrait img { width: 100%; max-width: 300px; height: auto; }
+.portrait-record dt { text-transform: uppercase; letter-spacing: 0.06em; }
+.portrait-record dd { margin: 0; color: var(--ink); }
 
 /* Two-column ledger: labels in a fixed column, values all starting on the
    same left edge so a value that wraps lines up with the rest. */
@@ -1246,15 +1252,21 @@ section.page-hero { padding-top: 0; padding-bottom: 0; }
   display: grid; grid-template-columns: 220px 1fr;
   gap: clamp(28px, 4vw, 56px); align-items: start;
 }
-.mk-mark { text-align: center; }
+.mk-mark { text-align: left; }
 .mk-mark__box { border: 1px solid #3a352e; background: #000; padding: 24px; }
-/* height:auto so the mark keeps its 1:1 ratio instead of stretching to
+/* height:auto so the mark keeps its ratio instead of stretching to
    fill whatever height the attributes imply. */
 .mk-mark__box img { width: 100%; height: auto; display: block; }
 .mk-mark__cap {
   font-family: 'Jost', sans-serif; font-size: 11px;
   letter-spacing: 0.12em; text-transform: uppercase;
   color: #8a857c; margin-top: 10px;
+}
+/* Author portrait, unframed, in the media kit author block. */
+.mk-portrait { width: 100%; height: auto; display: block; border-radius: 2px; }
+.mk-credit {
+  font-family: 'Jost', sans-serif; font-size: 11px;
+  letter-spacing: 0.06em; color: #8a857c; margin: 10px 0 0;
 }
 .mk-bio { font-size: 16.5px; color: #d8d2c6; }
 .mk-bio p { margin: 0 0 14px; }
@@ -1293,6 +1305,8 @@ section.page-hero { padding-top: 0; padding-bottom: 0; }
   display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px;
 }
 .mk-asset { border: 1px solid #DBD5C8; text-align: center; }
+a.mk-asset { display: block; text-decoration: none; color: inherit; transition: border-color 0.18s; }
+a.mk-asset:hover, a.mk-asset:focus-visible { border-color: #141210; }
 .mk-asset__preview {
   padding: 24px; background: #FFFFFF; height: 220px;
   display: flex; align-items: center; justify-content: center;

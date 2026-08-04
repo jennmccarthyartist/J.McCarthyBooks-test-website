@@ -37,6 +37,7 @@
         "name": "J. McCarthy",
         "jobTitle": "Author",
         "url": "https://www.jmccarthybooks.com/about",
+        "image": "https://www.jmccarthybooks.com/assets/author-portrait-1x1.png",
         "description": "Author of The Joseon Retrospective and the Keiko Ito Mystery Series. A former acquisitions editor and high school teacher with a B.A. in Art and Graphic Design, based in San Diego, California.",
         "homeLocation": { "@type": "Place", "name": "San Diego, California" },
         "alumniOf": { "@type": "CollegeOrUniversity", "name": "Point Loma Nazarene University" },
@@ -123,11 +124,23 @@
       <div class="wrap">
         <div class="about-split">
           <div>
-            <div class="about-portrait">
-              <img src="assets/logo-black-transparent.png" width="480" height="480"
-                   alt="The J. McCarthy Books imprint mark: a cat seated on an open book beneath a rising arch."
-                   loading="lazy">
-            </div>
+            <figure class="portrait-frame" style="margin:0;">
+              <div class="portrait-frame__plate">
+                <img src="assets/author-portrait-4x5.webp" width="1000" height="1250"
+                     alt="J. McCarthy, author of the Keiko Ito Mystery Series — a black-and-white portrait."
+                     loading="lazy">
+                <hr class="portrait-frame__rule">
+                <dl class="portrait-record">
+                  <dt>Subject</dt><dd>J. McCarthy</dd>
+                  <dt>Role</dt><dd>Author, The Keiko Ito Mysteries</dd>
+                  <dt>Place</dt><dd>San Diego, California</dd>
+                  <!-- PHOTO credit: replace the em-dash with the photographer's
+                       name/studio, or delete this row if no credit is required.
+                       Never burn the credit into the image file. -->
+                  <dt>Photo</dt><dd>&mdash;</dd>
+                </dl>
+              </div>
+            </figure>
             <ul class="about-facts mt-2">
               <li><span class="k">Writes</span> <span>The Keiko Ito Mystery Series</span></li>
               <li><span class="k">Debut</span> <span><em>The Joseon Retrospective</em>, 20 October 2026</span></li>
