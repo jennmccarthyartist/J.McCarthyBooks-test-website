@@ -27,6 +27,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
+  <!-- ============================================================
+       §8 STRUCTURED DATA — dated follow-ups (real tasks, not notes):
+       - numberOfPages: TODO. Add to the Book node below once page
+         counts lock (after 16 Aug 2026), and replace the visible
+         "approx. 300 pp. (provisional)" line with the real count.
+       - Books2Read URL: add "url" to the EBook offer below when the
+         link exists (same value as cfg.joseon.books2readUrl).
+       - On 20 Oct 2026: flip all three offer "availability" values
+         from .../PreOrder to https://schema.org/InStock.
+       Validate at search.google.com/test/rich-results after edits.
+       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,43 +59,37 @@
         "url": "https://www.jmccarthybooks.com/about"
       },
       {
-        "@type": "BookSeries",
-        "@id": "https://www.jmccarthybooks.com/series#series",
-        "name": "Keiko Ito Mystery Series",
-        "author": { "@id": "https://www.jmccarthybooks.com/#person" },
-        "url": "https://www.jmccarthybooks.com/series",
-        "numberOfItems": 5
-      },
-      {
         "@type": "Book",
         "@id": "https://www.jmccarthybooks.com/the-joseon-retrospective#book",
         "name": "The Joseon Retrospective",
         "alternateName": "The Joseon Retrospective: A Tokyo Art Museum Mystery",
         "author": { "@id": "https://www.jmccarthybooks.com/#person" },
         "inLanguage": "en",
-        "isPartOf": { "@id": "https://www.jmccarthybooks.com/series#series" },
+        "isPartOf": { "@type": "BookSeries", "name": "A Keiko Ito Mystery" },
         "position": 1,
         "genre": ["Mystery", "Literary fiction"],
         "url": "https://www.jmccarthybooks.com/the-joseon-retrospective",
         "datePublished": "2026-10-20",
+        "publisher": { "@type": "Organization", "name": "J. McCarthy Books" },
         "image": "https://www.jmccarthybooks.com/assets/joseon-retrospective-cover.jpg",
-        "abstract": "The Joseon Retrospective (Keiko Ito Mystery Series, Book One) is a literary mystery set at the National Art Center Tokyo (NACT), one of Japan's largest exhibition venues and a major national art institution that holds no permanent collection. Senior Registrar Keiko Ito — nineteen years a registrar, eleven of them at NACT — investigates the murder of Korean provenance researcher Dr. Yun Se-bin, whose body is discovered in a basement service corridor during preparations for a Joseon dynasty ceramics retrospective. The novel's mechanism of detection is entirely documentary: Keiko cross-references building management system badge logs, inspection schedules, and 1938 colonial-era acquisition records to identify the killer. Themes include Korean–Japanese colonial history, art restitution, institutional trust, and the ethics of the archive. The mystery is solved by a condition report, not a confession. Approximately 53,000 words. The series continues in Book Two.",
+        "description": "The Joseon Retrospective (Keiko Ito Mystery Series, Book One) is a literary mystery set at the National Art Center Tokyo (NACT), one of Japan's largest exhibition venues and a major national art institution that holds no permanent collection. Senior Registrar Keiko Ito — nineteen years a registrar, eleven of them at NACT — investigates the murder of Korean provenance researcher Dr. Yun Se-bin, whose body is discovered in a basement service corridor during preparations for a Joseon dynasty ceramics retrospective. The novel's mechanism of detection is entirely documentary: Keiko cross-references building management system badge logs, inspection schedules, and 1938 colonial-era acquisition records to identify the killer. Themes include Korean–Japanese colonial history, art restitution, institutional trust, and the ethics of the archive. The mystery is solved by a condition report, not a confession. Approximately 53,000 words. The series continues in Book Two.",
         "workExample": [
           {
             "@type": "Book",
             "bookFormat": "https://schema.org/Paperback",
-            "isbn": "979-8-9964711-0-2",
+            "isbn": "9798996471102",
             "offers": { "@type": "Offer", "price": "15.99", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder" }
           },
           {
             "@type": "Book",
             "bookFormat": "https://schema.org/Hardcover",
-            "isbn": "979-8-9964711-1-9",
+            "isbn": "9798996471119",
             "offers": { "@type": "Offer", "price": "27.99", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder" }
           },
           {
             "@type": "Book",
             "bookFormat": "https://schema.org/EBook",
+            "isbn": "9798996471126",
             "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder" }
           }
         ]
@@ -250,9 +255,12 @@
             <tr><th scope="row">Series</th><td>The Keiko Ito Mysteries, Book One of five</td></tr>
             <tr><th scope="row">Publication</th><td>20 October 2026</td></tr>
             <tr><th scope="row">Publisher</th><td>J. McCarthy Books (independently published)</td></tr>
-            <tr><th scope="row">Paperback</th><td>$15.99 &middot; ISBN 979-8-9964711-0-2</td></tr>
-            <tr><th scope="row">Hardcover</th><td>$27.99 &middot; ISBN 979-8-9964711-1-9</td></tr>
-            <tr><th scope="row">Ebook</th><td>$4.99</td></tr>
+            <tr><th scope="row">Paperback</th><td>$15.99 &middot; ISBN 979-8-9964711-0-2 &middot; 5.25&Prime; &times; 8.25&Prime;</td></tr>
+            <tr><th scope="row">Hardcover</th><td>$27.99 &middot; ISBN 979-8-9964711-1-9 &middot; 6&Prime; &times; 9&Prime;</td></tr>
+            <tr><th scope="row">Ebook</th><td>$4.99 &middot; ISBN 979-8-9964711-2-6</td></tr>
+            <!-- TODO §8: replace "approx. 300 pp. (provisional)" with the real
+                 page count once it locks (after 16 Aug 2026); mirror into the
+                 Book JSON-LD "numberOfPages". -->
             <tr><th scope="row">Length</th><td>approx. 300 pp. (provisional)</td></tr>
             <tr><th scope="row">Categories</th><td>Cozy mystery &middot; Literary fiction &middot; Museum &amp; art-world fiction &middot; Korea/Japan historical themes &middot; Dark academia</td></tr>
             <tr><th scope="row">Trade orders</th><td>Ingram (iPage) &amp; Baker &amp; Taylor. Trade discount; returnable.</td></tr>
