@@ -124,6 +124,20 @@
     if (excerptLive) { el.setAttribute('href', '/excerpt'); }
   });
 
+  /* Goodreads "Want to Read" buttons — shown only once the book's
+     Goodreads URL is set in retailers.js. */
+  var grUrl = (cfg.joseon && cfg.joseon.goodreadsBookUrl) || '';
+  document.querySelectorAll('[data-goodreads]').forEach(function (el) {
+    if (grUrl) {
+      el.hidden = false;
+      el.setAttribute('href', grUrl);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+    } else {
+      el.hidden = true;
+    }
+  });
+
   /* ============================================================
      /advance-copies — request links (§5)
      Each [data-arc="key"] link uses its real URL from cfg.arc when

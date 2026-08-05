@@ -37,6 +37,12 @@ window.SITE_CONFIG = {
        never links to a page that doesn't exist. */
     excerptLive: true,
 
+    /* The book's Goodreads page (not the author page). Paste it here
+       and the "Want to Read" buttons appear on the book page and the
+       excerpt; leave empty and they stay hidden. Goodreads emails
+       every shelver on release day, so this matters at launch. */
+    goodreadsBookUrl: "",
+
     retailers: [
       { name: "Amazon",        url: "" },  // via KDP
       { name: "Barnes & Noble", url: "" }, // via B&N Press
