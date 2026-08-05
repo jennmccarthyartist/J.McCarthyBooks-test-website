@@ -300,6 +300,15 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .split__cover img {
   width: min(360px, 82vw); border-radius: 4px; box-shadow: var(--shadow-cover); margin: 0 auto;
 }
+/* Landscape scene image (e.g. the NACT illustration) — fills the column
+   with a hairline archival frame instead of the book-cover treatment.
+   Both class names raise specificity above the base + mobile rules. */
+.split__cover.split__cover--scene img {
+  width: 100%; max-width: 560px; border-radius: 3px;
+  border: 1px solid var(--line);
+  box-shadow: 0 22px 46px -28px rgba(20, 18, 16, 0.5);
+  margin: 0 auto;
+}
 @media (max-width: 820px) {
   .split, .split--reverse { grid-template-columns: 1fr; gap: 36px; }
   .split__cover { order: -1; }
