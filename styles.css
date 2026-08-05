@@ -311,7 +311,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .retailer {
   display: flex; align-items: center; justify-content: center; gap: 8px;
   font-family: var(--font-display); font-weight: 600; font-size: 14px;
-  letter-spacing: 0.04em; text-transform: uppercase;
+  letter-spacing: 0.04em; text-transform: uppercase; text-align: center;
   padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius);
   background: var(--paper); color: var(--ink); text-decoration: none;
   transition: border-color 0.18s, background 0.18s, transform 0.18s;
@@ -664,7 +664,7 @@ section.page-hero { padding-top: 0; padding-bottom: 0; }
 .about-split { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(36px, 6vw, 64px); align-items: start; }
 /* Author portrait, framed as a record card (§6). The surrounding card is
    what makes the portrait read as belonging to the novel's world. */
-.portrait-frame { background: #FAF8F4; padding: 28px; border-radius: var(--radius); }
+.portrait-frame { background: var(--jade); padding: 28px; border-radius: var(--radius); }
 .portrait-frame__plate { background: #FFFFFF; border: 1px solid var(--line); padding: 14px 14px 0; }
 .portrait-frame__plate img { display: block; width: 100%; height: auto; }
 .portrait-frame__rule { height: 1px; background: var(--line); border: 0; margin: 14px 0 0; }
