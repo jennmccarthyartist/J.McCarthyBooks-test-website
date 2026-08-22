@@ -61,32 +61,29 @@
 
   document.querySelectorAll('[data-retailers]').forEach(function (host) {
     host.innerHTML = '';
-    if (live.length) {
-      live.forEach(function (r) {
-        var a = document.createElement('a');
-        a.className = 'retailer';
-        a.href = r.url;
-        a.rel = 'noopener';
-        a.target = '_blank';
-        a.innerHTML = r.name +
-          '<span class="u-sr-only"> — ' + verb.toLowerCase() +
-          ' The Joseon Retrospective (opens in a new tab)</span>';
-        host.appendChild(a);
-      });
-    } else {
-      pending.forEach(function (r) {
-        var s = document.createElement('span');
-        s.className = 'retailer retailer--pending';
-        s.setAttribute('aria-disabled', 'true');
-        s.innerHTML = r.name + '<em>Link coming</em>';
-        host.appendChild(s);
-      });
-    }
+    live.forEach(function (r) {
+      var a = document.createElement('a');
+      a.className = 'retailer';
+      a.href = r.url;
+      a.rel = 'noopener';
+      a.target = '_blank';
+      a.innerHTML = r.name +
+        '<span class="u-sr-only"> — ' + verb.toLowerCase() +
+        ' The Joseon Retrospective (opens in a new tab)</span>';
+      host.appendChild(a);
+    });
+    pending.forEach(function (r) {
+      var s = document.createElement('span');
+      s.className = 'retailer retailer--pending';
+      s.setAttribute('aria-disabled', 'true');
+      s.innerHTML = r.name + '<em>Link coming</em>';
+      host.appendChild(s);
+    });
   });
 
   /* Blocks shown only before / only after links go live. */
   document.querySelectorAll('[data-when="no-links"]').forEach(function (el) {
-    el.hidden = live.length > 0;
+    el.hidden = pending.length === 0;
   });
   document.querySelectorAll('[data-when="links"]').forEach(function (el) {
     el.hidden = live.length === 0;

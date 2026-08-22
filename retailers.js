@@ -44,13 +44,12 @@ window.SITE_CONFIG = {
     goodreadsBookUrl: "",
 
     retailers: [
-      { name: "Amazon",        url: "" },  // via KDP
+      { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },  // ebook preorder, releases 20 October 2026
       { name: "Barnes & Noble", url: "" }, // via B&N Press
       { name: "Apple Books",   url: "" },  // via iTunes Connect / D2D
       { name: "Kobo",          url: "" },  // via Kobo Writing Life / D2D
       { name: "Google Play",   url: "" },  // via Google Play Books / D2D
-      { name: "Bookshop.org",  url: "" },  // via IngramSpark
-      { name: "Libro.fm",      url: "" }   // audio, if/when it exists
+      { name: "Bookshop.org",  url: "" }   // via IngramSpark
     ],
 
     /* Shown to libraries and booksellers on the trade pages. */
