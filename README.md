@@ -28,7 +28,7 @@ Three switches live in that file:
 | `joseon.onSale` | `false` → buttons read "Preorder". `true` → "Buy". |
 | `falcon.preorderUrl` | Set it and `/falcon` flips from a signup form to a preorder button. |
 
-You never have to edit HTML to launch. This behaviour is verified working in
+You never have to edit HTML to launch. This behavior is verified working in
 both states.
 
 **Note on your platform list.** Amazon KDP, IngramSpark, Kobo Writing Life,
@@ -76,7 +76,7 @@ Two deliberate departures from the reference, both noted in the CSS:
   so below ~700px the nav overlapped the wordmark. It now stacks. The
   reference's tested layout above 700px is untouched.
 - **Paragraph margins.** The reference builds text blocks from `<div>`s; the
-  page uses semantic `<p>`/`<h3>`, so the base paragraph margin is cancelled to
+  page uses semantic `<p>`/`<h3>`, so the base paragraph margin is canceled to
   keep spacing identical.
 
 Assets it uses (downscaled from the 2000–5000px originals for load speed):
@@ -213,7 +213,7 @@ Vercel serves the root `404.html` with a real 404 status automatically —
 no config needed, and that is what the copy brief requires.
 
 **`vercel.json` must stay strictly schema-valid.** Vercel sets
-`additionalProperties: false`, so any key it doesn't recognise — including
+`additionalProperties: false`, so any key it doesn't recognize — including
 a `"//"` pseudo-comment — makes the whole deployment fail validation
 before it starts. JSON has no comment syntax; document changes here
 instead. To check a change before pushing:

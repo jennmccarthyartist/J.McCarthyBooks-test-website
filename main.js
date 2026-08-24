@@ -1,5 +1,5 @@
 /* ============================================================
-   J. McCarthy Books — site behaviour
+   J. McCarthy Books — site behavior
    Progressive enhancement only. Every page works without this.
    ============================================================ */
 (function () {
