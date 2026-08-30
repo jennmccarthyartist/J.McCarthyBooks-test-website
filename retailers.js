@@ -55,7 +55,6 @@ window.SITE_CONFIG = {
     /* Shown to libraries and booksellers on the trade pages. */
     trade: {
       ingram: "Ingram Content Group (iPage)",
-      bakerTaylor: "Baker & Taylor",
       isbnPaperback: "979-8-9964711-0-2",
       isbnHardcover: "979-8-9964711-1-9"
     }
