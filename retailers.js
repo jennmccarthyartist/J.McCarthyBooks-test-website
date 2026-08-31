@@ -75,7 +75,7 @@ window.SITE_CONFIG = {
     /* Booksprout ARC team claim page. */
     booksproutUrl: "",
     /* Blogger / bookstagram request form (BookFunnel-delivered). */
-    requestFormUrl: "",
+    requestFormUrl: "https://dl.bookfunnel.com/kd90qgovow",
     /* BookSirens — decision gated for 1 September. Paste a URL to
        reveal a fourth request card; leave empty to keep it hidden. */
     bookSirensUrl: ""
