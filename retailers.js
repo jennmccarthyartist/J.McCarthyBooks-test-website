@@ -73,11 +73,13 @@ window.SITE_CONFIG = {
      so a reviewer can still opt in to hear when it opens. */
   arc: {
     /* Booksprout ARC team claim page. */
-    booksproutUrl: "",
+    booksproutUrl: "https://booksprout.co/reviewer/review-copy/view/314110/the-joseon-retrospective",
     /* Blogger / bookstagram request form (BookFunnel-delivered). */
     requestFormUrl: "https://dl.bookfunnel.com/kd90qgovow",
-    /* BookSirens — decision gated for 1 September. Paste a URL to
-       reveal a fourth request card; leave empty to keep it hidden. */
+    /* BookSirens — submission declined 1 September 2026, before any
+       manuscript was uploaded. BookSirens does not reconsider
+       submissions, so this stays empty and the card stays hidden.
+       Not an open task. */
     bookSirensUrl: ""
   }
 };
