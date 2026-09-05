@@ -46,8 +46,8 @@ window.SITE_CONFIG = {
     retailers: [
       { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },  // ebook preorder, releases 20 October 2026
       { name: "Barnes & Noble", url: "" }, // via B&N Press
-      { name: "Apple Books",   url: "" },  // via iTunes Connect / D2D
-      { name: "Kobo",          url: "" },  // via Kobo Writing Life / D2D
+      { name: "Apple Books",   url: "https://books.apple.com/us/book/the-joseon-retrospective/id6808521415" },  // via iTunes Connect / D2D
+      { name: "Kobo",          url: "https://www.kobo.com/us/en/ebook/the-joseon-retrospective" },  // via Kobo Writing Life / D2D
       { name: "Google Play",   url: "" },  // via Google Play Books / D2D
       { name: "Bookshop.org",  url: "" }   // via IngramSpark
     ],
