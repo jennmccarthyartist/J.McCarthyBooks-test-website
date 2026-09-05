@@ -41,7 +41,7 @@ window.SITE_CONFIG = {
        and the "Want to Read" buttons appear on the book page and the
        excerpt; leave empty and they stay hidden. Goodreads emails
        every shelver on release day, so this matters at launch. */
-    goodreadsBookUrl: "",
+    goodreadsBookUrl: "https://www.goodreads.com/book/show/257244436-the-joseon-retrospective",
 
     retailers: [
       { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },  // ebook preorder, releases 20 October 2026
