@@ -6,9 +6,11 @@
    HOW IT WORKS
    - Paste a URL between the quotes. That button turns on everywhere
      on the site, automatically. No HTML editing.
-   - Leave it as "" (empty). That button renders as a quiet
-     "Link coming" chip instead, and the page falls back to the
-     newsletter CTA.
+   - Leave it as "" (empty). What that does depends on the key:
+     a retailer in the array below renders as a quiet "Link coming"
+     chip; books2readUrl falls back to the newsletter CTA; and
+     goodreadsBookUrl, falcon.preorderUrl and the arc.* keys hide
+     their element entirely, so nothing renders at all.
    - Delete a whole line to remove that retailer from the site.
 
    These are READER-FACING STOREFRONTS. Your publishing platforms
