@@ -30,7 +30,7 @@ window.SITE_CONFIG = {
 
     /* THE EBOOK PREORDER LINK (Books2Read universal link).
        Paste it here and the book page's primary button flips from
-       "Tell me the moment preorders open" (→ newsletter) to
+       "Tell me when print goes on sale" (→ newsletter) to
        "Preorder the ebook · $4.99" (→ this URL). One-line change. */
     books2readUrl: "",
 
@@ -40,7 +40,7 @@ window.SITE_CONFIG = {
     excerptLive: true,
 
     /* The book's Goodreads page (not the author page). Paste it here
-       and the "Want to Read" buttons appear on the book page and the
+       and the "Add on Goodreads" buttons appear on the book page and the
        excerpt; leave empty and they stay hidden. Goodreads emails
        every shelver on release day, so this matters at launch. */
     goodreadsBookUrl: "https://www.goodreads.com/book/show/257244436-the-joseon-retrospective",

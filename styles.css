@@ -205,7 +205,7 @@ section { padding: clamp(56px, 8vw, 104px) 0; }
 .btn--primary:hover { background: var(--cinnabar-soft); }
 .btn--secondary { background: var(--jade); color: var(--ink); }
 .btn--secondary:hover { filter: brightness(1.08); }
-/* House-styled Goodreads "Want to Read" button — ink, never the stock
+/* House-styled Goodreads "Add on Goodreads" button — ink, never the stock
    Goodreads green widget (§9). */
 .btn--ink { background: var(--ink); color: #fff; }
 .btn--ink:hover { background: var(--ink-2); }

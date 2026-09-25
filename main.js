@@ -98,7 +98,7 @@
      BOOK PAGE — ebook preorder button (Books2Read universal link)
      Two states, driven by cfg.joseon.books2readUrl:
        set   → "Preorder the ebook · $4.99" → the link
-       empty → "Tell me the moment preorders open" → newsletter
+       empty → "Tell me when print goes on sale" → newsletter
      Also reveals the "Read the opening pages" button only once the
      /excerpt page exists (cfg.joseon.excerptLive).
      ============================================================ */
@@ -111,7 +111,7 @@
       a.setAttribute('target', '_blank');
     } else {
       a.href = '/the-file';
-      a.textContent = 'Tell me the moment preorders open';
+      a.textContent = 'Tell me when print goes on sale';
       a.removeAttribute('target');
     }
   });
@@ -121,7 +121,7 @@
     if (excerptLive) { el.setAttribute('href', '/excerpt'); }
   });
 
-  /* Goodreads "Want to Read" buttons — shown only once the book's
+  /* Goodreads "Add on Goodreads" buttons — shown only once the book's
      Goodreads URL is set in retailers.js. */
   var grUrl = (cfg.joseon && cfg.joseon.goodreadsBookUrl) || '';
   document.querySelectorAll('[data-goodreads]').forEach(function (el) {
