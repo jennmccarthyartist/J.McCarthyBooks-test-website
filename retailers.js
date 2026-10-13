@@ -32,7 +32,7 @@ window.SITE_CONFIG = {
        Paste it here and the book page's primary button flips from
        "Tell me when print goes on sale" (→ newsletter) to
        "Preorder the ebook · $4.99" (→ this URL). One-line change. */
-    books2readUrl: "",
+    books2readUrl: "https://books2read.com/u/3Gyk1Q",
 
     /* Flip to true when the /excerpt page ships (§4). Until then the
        "Read the opening pages" button stays hidden so the live site
