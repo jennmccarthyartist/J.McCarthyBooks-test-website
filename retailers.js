@@ -47,11 +47,11 @@ window.SITE_CONFIG = {
 
     retailers: [
       { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },  // ebook preorder, releases 20 October 2026
-      { name: "Barnes & Noble", url: "" }, // via B&N Press
+      { name: "Barnes & Noble", url: "https://www.barnesandnoble.com/w/the-joseon-retrospective-j-mccarthy/1151506627?ean=2940197016867" }, // via D2D. The 2940… EAN is B&N's own Nook identifier, not our ISBN.
       { name: "Apple Books",   url: "https://books.apple.com/us/book/the-joseon-retrospective/id6808521415" },  // via iTunes Connect / D2D
       { name: "Kobo",          url: "https://www.kobo.com/us/en/ebook/the-joseon-retrospective" },  // via Kobo Writing Life / D2D
-      { name: "Google Play",   url: "" },  // via Google Play Books / D2D
-      { name: "Bookshop.org",  url: "" }   // via IngramSpark
+      { name: "Google Play",   url: "https://play.google.com/store/books/details?id=KKIJEgAAQBAJ" },  // via Google Play Books / D2D
+      { name: "Bookshop.org",  url: "https://bookshop.org/p/books/the-joseon-retrospective-a-keiko-ito-mystery-1-j-mccarthy/638a4f7be4beca93?ean=9798996471126" }   // via D2D — this is the EBOOK listing (ean = ebook ISBN). Print on Bookshop comes via IngramSpark once distribution is enabled.
     ],
 
     /* Shown to libraries and booksellers on the trade pages. */
