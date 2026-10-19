@@ -26,7 +26,7 @@ window.SITE_CONFIG = {
   joseon: {
     /* Set to true once ANY link below is live and the book is
        orderable. Controls whether CTAs read "Preorder" or "Buy". */
-    onSale: false,
+    onSale: true,
 
     /* THE EBOOK PREORDER LINK (Books2Read universal link).
        Paste it here and the book page's primary button flips from
