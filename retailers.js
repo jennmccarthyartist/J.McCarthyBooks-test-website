@@ -82,7 +82,11 @@ window.SITE_CONFIG = {
     /* Booksprout ARC team claim page. */
     booksproutUrl: "https://booksprout.co/reviewer/review-copy/view/314110/the-joseon-retrospective",
     /* Blogger / bookstagram request form (BookFunnel-delivered). */
-    requestFormUrl: "https://dl.bookfunnel.com/kd90qgovow",
+    /* BookFunnel ARC page EXPIRED 19 Oct 2026 ("This giveaway has expired").
+       Emptied 20 Oct so the card falls back to the newsletter instead of
+       sending reviewers to a dead page. Paste a new BookFunnel URL here if
+       ARCs reopen for Book Two. */
+    requestFormUrl: "",
     /* BookSirens — submission declined 1 September 2026, before any
        manuscript was uploaded. BookSirens does not reconsider
        submissions, so this stays empty and the card stays hidden.
