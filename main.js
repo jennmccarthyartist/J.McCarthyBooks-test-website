@@ -95,10 +95,12 @@
   });
 
   /* ============================================================
-     BOOK PAGE — ebook preorder button (Books2Read universal link)
+     BOOK PAGE — ebook buy button (Books2Read universal link)
      Two states, driven by cfg.joseon.books2readUrl:
-       set   → "Preorder the ebook · $4.99" → the link
+       set   → "<verb> the ebook · $4.99" → the link
        empty → "Tell me when print goes on sale" → newsletter
+     The verb follows cfg.joseon.onSale: "Preorder" before publication
+     day, "Buy" after. Do not hardcode it here.
      Also reveals the "Read the opening pages" button only once the
      /excerpt page exists (cfg.joseon.excerptLive).
      ============================================================ */
@@ -106,7 +108,7 @@
   document.querySelectorAll('[data-preorder-ebook]').forEach(function (a) {
     if (b2r) {
       a.href = b2r;
-      a.textContent = 'Preorder the ebook · $4.99';
+      a.textContent = verb + ' the ebook · $4.99';
       a.setAttribute('rel', 'noopener');
       a.setAttribute('target', '_blank');
     } else {

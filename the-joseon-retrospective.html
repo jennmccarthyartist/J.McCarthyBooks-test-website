@@ -198,8 +198,8 @@
     <section class="section--warm" id="buy">
       <div class="wrap wrap--narrow">
         <p class="buy-eyebrow">Formats &amp; editions</p>
-        <h2>Preorder now. On sale 20 October.</h2>
-        <p class="buy-intro"><em>The Joseon Retrospective</em> publishes on Tuesday, 20 October 2026. The ebook is available for preorder now. Paperback and hardcover go on sale on publication day.</p>
+        <h2>On sale now.</h2>
+        <p class="buy-intro"><em>The Joseon Retrospective</em> is out now in paperback, hardcover and ebook.</p>
 
         <div class="format-cards">
           <div class="format-card">
@@ -222,7 +222,9 @@
         <div class="btn-row">
           <!-- Two-state, driven by cfg.joseon.books2readUrl in retailers.js.
                Default: "Tell me when print goes on sale" → /the-file.
-               With a link: "Preorder the ebook · $4.99" → Books2Read. -->
+               With a link: "<verb> the ebook · $4.99" → Books2Read, where
+               the verb follows cfg.joseon.onSale (Preorder / Buy).
+               The text below is only what shows before main.js runs. -->
           <a class="btn btn--primary btn--lg" data-preorder-ebook href="/the-file">Tell me when print goes on sale</a>
           <!-- Hidden until the /excerpt page ships (§4); flip cfg.joseon.excerptLive.
                href stays "#" until then so the live HTML holds no dead /excerpt link. -->
@@ -232,8 +234,8 @@
         </div>
 
         <p class="buy-microcopy">
-          <span>Ebook preorder is live at the stores shown below; more open as each retailer lists the title.</span>
-          <span>Paperback and hardcover go on sale on 20 October, and can be ordered by bookshops and libraries through Ingram from early October.</span>
+          <span>The ebook is available now at every store shown below.</span>
+          <span>Paperback and hardcover can be ordered by bookshops and libraries through Ingram (iPage), at a trade discount and returnable.</span>
         </p>
 
         <div class="retailers mt-2" data-retailers></div>
