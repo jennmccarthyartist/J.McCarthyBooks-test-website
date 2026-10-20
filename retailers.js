@@ -46,7 +46,7 @@ window.SITE_CONFIG = {
     goodreadsBookUrl: "https://www.goodreads.com/book/show/257244436-the-joseon-retrospective",
 
     retailers: [
-      { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },  // ebook preorder, releases 20 October 2026
+      { name: "Amazon",        url: "https://www.amazon.com/dp/B0HFZQ127N" },
       // B&N splits ebook and print across separate product pages, so this is a
       // search URL showing all three formats rather than the Nook page alone.
       // (Amazon needs no equivalent: one listing there carries every format.)
