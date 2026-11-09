@@ -56,7 +56,16 @@ window.SITE_CONFIG = {
       { name: "Apple Books",   url: "https://books.apple.com/us/book/the-joseon-retrospective/id6808521415" },  // via iTunes Connect / D2D
       { name: "Kobo",          url: "https://www.kobo.com/us/en/ebook/the-joseon-retrospective" },  // via Kobo Writing Life / D2D
       { name: "Google Play",   url: "https://play.google.com/store/books/details?id=KKIJEgAAQBAJ" },  // via Google Play Books / D2D
-      { name: "Bookshop.org",  url: "https://bookshop.org/p/books/the-joseon-retrospective-a-keiko-ito-mystery-1-j-mccarthy/638a4f7be4beca93?ean=9798996471126" }   // via D2D — this is the EBOOK listing (ean = ebook ISBN). Print on Bookshop comes via IngramSpark once distribution is enabled.
+      // Bookshop keeps print and ebook as two separate products. Print (both
+      // formats, one page, switched by the ean parameter) came via IngramSpark;
+      // the ebook is a different product id entirely, via D2D, and cannot be
+      // merged with it. Print is what Bookshop shoppers are there for, and the
+      // ebook is covered by the Books2Read link, so this points at print.
+      // The ean below selects the PAPERBACK; without it the page defaults to
+      // the $27.99 hardcover and buries the $15.99 one.
+      //   paperback 9798996471102 | hardcover 9798996471119 (same page)
+      //   ebook     9798996471126 at /the-joseon-retrospective-a-keiko-ito-mystery-1-j-mccarthy/638a4f7be4beca93
+      { name: "Bookshop.org",  url: "https://bookshop.org/p/books/the-joseon-retrospective-a-tokyo-art-museum-mystery/be9261e9ec1fd492?ean=9798996471102" }
     ],
 
     /* Shown to libraries and booksellers on the trade pages. */
